@@ -3,12 +3,12 @@
 <html lang="en-ca">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Converting Fahrenheit to Celsius, with JS" />
+    <meta name="description" content="Multiplication Using Looping" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Joanne Santhosh" />
     <meta name="theme-color" content="#FFFFFF" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Converting Fahrenheit to Celsius, with JS</title>
+    <title>Multiplication Using Looping</title>
     <link rel="canonical" href="https://joannesanthosh.github.io/ICS20-Unit5-06-HTML/" />
     <link rel="manifest" href="/ICS20-Unit5-06-HTML/manifest.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
@@ -26,7 +26,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Converting Fahrenheit to Celsius, with JS</span>
+          <span class="mdl-layout-title">Multiplication Using Looping</span>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -36,15 +36,22 @@
         <table>
           <tr>
             <th>
-              <h3>Formulas:</h3> 
-              <h4>(°F − 32) × 5/9 = °C</h4>
-              <h5>Please enter the fahrenheit below:</h5>
+              <h5>Please enter two integers below:</h5>
               <!-- Numeric Textfield -->
               <form action="#">
-                <p>fahrenheit:</p>
+                <p>First Number:</p>
                 <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="fahrenheit">
-                  <label class="mdl-textfield__label" for="fahrenheit">enter the fahrenheit here...</label>
+                  <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="first-number">
+                  <label class="mdl-textfield__label" for="first-number">enter the first number here...</label>
+                  <span class="mdl-textfield__error">Input is not a number!</span>
+                </div>
+              </form>
+              <!-- Numeric Textfield -->
+              <form action="#">
+                <p>Second Number:</p>
+                <div class="mdl-textfield mdl-js-textfield">
+                  <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="second-number">
+                  <label class="mdl-textfield__label" for="second-number">enter the second number here...</label>
                   <span class="mdl-textfield__error">Input is not a number!</span>
                 </div>
               </form>
