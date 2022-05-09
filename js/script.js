@@ -19,34 +19,34 @@ if (navigator.serviceWorker) {
  */
 function convert() {
   // input
-  const firstNumber = parseInt(document.getElementById("first-number").value)
-  const secondNumber = parseInt(document.getElementById("second-number").value)
+  const firstInteger = parseInt(document.getElementById("first-number").value)
+  const secondInteger = parseInt(document.getElementById("second-number").value)
 
   // process
   var addedNumber = 0
-  var answer = 0
+  var result = 0
 
-  if (firstNumber > 0 && secondNumber > 0) {
-    while (addedNumber < secondNumber){
+  if (firstInteger > 0 && secondInteger > 0) {
+    while (addedNumber < secondInteger){
       addedNumber = addedNumber + 1;
-      answer = answer + firstNumber;
+      result = result + firstInteger;
     }
-  } else if (firstNumber < 0 && secondNumber < 0) {
-    while (addedNumber > secondNumber){
+  } else if (firstInteger < 0 && secondInteger < 0) {
+    while (addedNumber > secondInteger){
       addedNumber = addedNumber - 1;
-      answer = answer - firstNumber;
+      result = result - firstInteger;
     }
-  } else if (firstNumber > 0 && secondNumber < 0) {
-    while (addedNumber > secondNumber) {
+  } else if (firstInteger > 0 && secondInteger < 0) {
+    while (addedNumber > secondInteger) {
       addedNumber = addedNumber - 1;
-      answer = answer - firstNumber;
+      result = result - firstInteger;
     }
-  } else if (firstNumber < 0 && secondNumber > 0) {
-    while (addedNumber < secondNumber) {
+  } else if (firstInteger < 0 && secondInteger > 0) {
+    while (addedNumber < secondInteger) {
       addedNumber = addedNumber + 1;
-      answer = answer + firstNumber;
+      result = result + firstInteger;
     }
   }
   
-  document.getElementById('answer').innerHTML = firstNumber + " x " + addedNumber + " = " + answer;
+  document.getElementById('answer').innerHTML = firstInteger + " x " + addedNumber + " = " + result;
 }
