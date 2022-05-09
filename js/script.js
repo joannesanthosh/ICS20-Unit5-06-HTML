@@ -27,12 +27,12 @@ function convert() {
   var result = 0
 
   if (firstInteger > 0 && secondInteger > 0) {
-    while (addedNumber < secondInteger){
+    while (addedNumber < secondInteger) {
       addedNumber = addedNumber + 1;
       result = result + firstInteger;
     }
   } else if (firstInteger < 0 && secondInteger < 0) {
-    while (addedNumber > secondInteger){
+    while (addedNumber > secondInteger) {
       addedNumber = addedNumber - 1;
       result = result - firstInteger;
     }
