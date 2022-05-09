@@ -23,6 +23,30 @@ function convert() {
   const secondNumber = parseInt(document.getElementById("second-number").value)
 
   // process
-  while
+  var addedNumber = 0
+  var answer = 0
 
+  if (firstNumber > 0 && secondNumber > 0) {
+    while (addedNumber < secondNumber){
+      addedNumber = addedNumber + 1;
+      answer = answer + firstNumber;
+    }
+  } else if (firstNumber < 0 && secondNumber < 0) {
+    while (addedNumber > secondNumber){
+      addedNumber = addedNumber - 1;
+      answer = answer - firstNumber;
+    }
+  } else if (firstNumber > 0 && secondNumber < 0) {
+    while (addedNumber > secondNumber) {
+      addedNumber = addedNumber - 1;
+      answer = answer - firstNumber;
+    }
+  } else if (firstNumber < 0 && secondNumber > 0) {
+    while (addedNumber < secondNumber) {
+      addedNumber = addedNumber + 1;
+      answer = answer + firstNumber;
+    }
+  }
+  
+  document.getElementById('answer').innerHTML = firstNumber + " x " + addedNumber + " = " + answer;
 }
